@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Funnel Sans", Arial;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+#cabecalho {
+    background-color: #000;
+}
+
+#cabecalho img {
+    width: 30px;
+}
+
+#cabecalho #menu ul {
+    display: flex;
+}
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+    transition: all 0.5s linear;
+}
+
+#cabecalho #menu a:hover {
+    background-color: #069;
+
+}
+
+#cabecalho #menu ul li {
+    list-style: none;
+    position: relative;
+}
+
+#cabecalho #menu ul li:hover .submenu {
+    display: block;
+}
+
+#cabecalho #menu .submenu {
+    /* Oculta a tag da página */
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    width: 150px;
+}
+
+#cabecalho #menu .submenu a {
+    border-bottom: #444 1px solid;
+    padding: 10px;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.historia img {
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+.historia p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#galeria img{
+    display: block;
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+#galeria img:hover {
+    transform: scale(1.1);
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#rodape {
+    background-color: #000;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 30px;
+}
